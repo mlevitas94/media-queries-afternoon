@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type='text/css' href="reset.css"/>
+    <link rel='stylesheet' type='text/css' href="main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav>
+        <div class="container" id="cont">
+            <span>Start Bootstrap</span>
+
+            <i class ="fas fa-bars" id="burger"></i>
+            
+            <div class="links-container">
+                <span class="link">SERVICES</span>
+                <span class="link">PORTFOLIO</span>
+                <span class="link">ABOUT</span>
+                <span class="link">TEAM</span>
+                <span class="link">CONTACT</span>
+
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Welcome to our studio!</h1>
+        <h1>Its nice to meet you!</h1>
+        <button>Tell me more!</button>
+
+    </div>
+    <script>
+    function scrollNav(){
+   
+    if(window.pageYOffset> 50){
+        document.getElementById("cont").style.padding = "15px";
+        document.getElementById("cont").style.fontSize = "15px";
+        console.log("happened")
+    }else{
+        document.getElementById("cont").style.padding = "20px";
+        document.getElementById("cont").style.fontSize = "20px";
+        console.log("happened")
+    }
+}
+
+window.onscroll = function(){
+    scrollNav()
+}
+    </script>
+</body>
+</html>

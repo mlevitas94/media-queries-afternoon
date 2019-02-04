@@ -1,0 +1,66 @@
+body{
+    background-color: grey;
+}
+#burger{
+    display:none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 0px auto;
+    padding:20px;
+    width: 70%;
+    transition: padding-top .3s,padding-bottom .3s;
+    transition-property: padding-top, padding-bottom;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+
+
+
+.link{
+    margin: 0px 5px;
+}
+
+.link:hover{
+    color: yellow;
+}
+nav{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: 0px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin: 100px auto;
+    text-align: center;
+    background-color: rebeccapurple;
+    height: 1000px;
+}
+
+@media (max-width: 990px){
+    #burger{
+        display:inline-block;
+    }
+
+    .links-container{
+        display: none;
+    }
+}
+
+@media(max-width:1200px){
+    .container{
+        width: 80%;
+    }
+}
+
+
